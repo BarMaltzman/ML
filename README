@@ -168,3 +168,218 @@ year of release)
 - Some MovieIDs do not correspond to a movie due to accidental duplicate
 entries and/or test entries
 - Movies are mostly entered by hand, so errors and inconsistencies may exist
+
+
+
+
+**********************************************************
+
+
+
+
+import React from 'react';
+import check from '../../Images/check.svg';
+import illustration from '../../Images/illustration.png';
+
+
+const Community = ()=>{
+    const cardStyle = {
+        width : "600px",
+        // justifyContent: 'center',
+        // display : 'inline-block',
+        background: 'white',
+        height: '400px',
+        borderRadius: '4px',
+        font:'Open sans'
+    }
+
+    const headerStyle = {
+        background: '#4e7d94',
+        height: '100px'
+    }
+    const bodyStyle = {
+        textAlign: 'left',
+        color: 'rgb(23,42,65)',
+        padding: '20px 50px 50px 60px'
+    }
+    const footerStyle = {
+        display: 'inline-block',
+        // width: '500px',
+        paddingRight: '80px'
+    }
+
+    const freeStyle = {
+        fontSize: '24px',
+        paddingTop: '20px'
+    }
+    const tenStyle = {
+        fontSize: '30px',
+    }
+
+    const buttonStyle = {
+        width: '150px',
+        height: '40px',
+        borderRadius:'4px',
+        backgroundColor: '	#e47747',
+        color: 'white'
+    }
+    const left = {
+        display: 'inline-block'
+    }
+    const right = {
+        display: 'inline-block'
+    }
+
+    const paddingHeaders = {
+        paddingLeft: '14px'
+    }
+    return(
+        <div style={cardStyle}>
+            <div style={headerStyle} >
+                <div style={freeStyle}>
+                    Free
+                </div>
+                <div>
+                    Share your business content and access
+                </div>
+                <div>
+                    Zoominfo's database for free
+                </div>
+            </div>
+            <div style={bodyStyle}>
+                <div style={left}>
+                    <span>
+                    <p><img src={check} alt=""/><span style={tenStyle}>   10</span> content views/month</p>
+                    <p><img src={check} alt=""/><span style={paddingHeaders}>Basic content search</span></p>
+                    <p><img src={check} alt=""/>  <span style={paddingHeaders}> Export content to Email</span></p>
+                    <button style={buttonStyle}>Get Started</button>
+                    </span>
+                </div>
+
+                <div style={right}>
+                    <img src={illustration} alt=""/>
+                </div>
+                <div style={footerStyle}>
+                    <h6>it works via the secure Open Authentication protocol.
+                        In return your securely sharing business contacts, you get free, ongoing access to over 150 million people
+                        and 10 million companies  </h6>
+                </div>
+
+            </div>
+
+        </div>
+    )
+}
+
+
+export default Community;
+
+***********************************************
+
+
+import React from 'react';
+import check from '../../Images/check.svg';
+
+const Business = ()=>{
+
+    const cardStyle = {
+        width : "600px",
+        // justifyContent: 'center',
+        // display : 'inline-block',
+        background: 'white',
+        height: '400px',
+        borderRadius: '4px',
+        font:'Open sans'
+    }
+
+    const headerStyle = {
+        background: '#4e7d94',
+        height: '100px'
+    }
+    const firstDivStyle = {
+        paddingTop: '25px'
+    }
+    const bodyStyle = {
+        textAlign: 'left',
+        color: 'rgb(23,42,65)',
+        padding: '20px 50px 50px 60px'
+    }
+    const footerStyle = {
+        display: 'flex',
+        height: '40px',
+        midWidth: '280px',
+        width: '100%',
+        marginTop: '20px',
+        marginBottom: '20px'
+
+    }
+
+    const twothausandStyle={
+        fontSize: '30px',
+        paddingLeft: '20px'
+    }
+    const featuresStyle = {
+        fontSize: '26px',
+        paddingTop: '25px'
+    }
+
+    const featureNamesStyle = {
+        fontSize: '20px',
+        paddingLeft: '20px',
+        paddingRight: '12px'
+    }
+
+    const inputStyle = {
+        // flexGrow: '2px',
+        border: '1px solid grey',
+        borderRadius:'6px 0px 0px 6px',
+        padding:'0px 10px',
+        fontSize: '15px'
+    }
+    const buttonStyle = {
+        flexGrow: '1',
+        borderRadius: '0 6px 6px 0',
+        fontSize: '15px',
+        fontWeight: '100',
+
+        backgroundColor: '#f3703a',
+        color: '#fff',
+        border: '0',
+        cursor: 'pointer'
+    }
+
+    return(
+        <div style={cardStyle}>
+            <div style={headerStyle}>
+                <div style={firstDivStyle}>
+                    Access Zoomnfo growth Acceleration
+                </div>
+                <div>
+                    For Sales and Marketing teams.
+                </div>
+
+            </div>
+            <div style={bodyStyle}>
+                <div><img src={check} alt=""/><span style={twothausandStyle}>2,000</span> contact/views a month</div>
+                <div style={featuresStyle}>
+                    Features:
+                </div>
+                <div>
+                    <div><img src={check} alt=""/><span style={featureNamesStyle}>Search:</span>Advance contact & company search</div>
+                    <div><img src={check} alt=""/><span style={featureNamesStyle}>Build:</span>Advence export options</div>
+                    <div><img src={check} alt=""/><span style={featureNamesStyle}>Insights:</span>in-dapth database analysis</div>
+                    <div><img src={check} alt=""/><span style={featureNamesStyle}>Enhance:</span>improve the quality of your existing data</div>
+                </div>
+
+            </div>
+            <div style={footerStyle}>
+                <input type="email" placeHolder='Business Email' style={inputStyle}/>
+                <button style={buttonStyle}>Get Pricing</button>
+
+            </div>
+        </div>
+
+    )
+    }
+
+export default Business;
